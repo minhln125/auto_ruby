@@ -1,6 +1,7 @@
 require 'selenium-cucumber'
 require 'appium_lib'
-Selenium::WebDriver::Chrome.path ="C:/Users/Admin/Desktop/New folder/CucumberJava/src/test/resources/driver/chromedriver.exe"
+dirname = Dir.pwd
+Selenium::WebDriver::Chrome.path = dirname+"/driver/chromedriver.exe"
 # caps = Selenium::WebDriver::Remote::Capabilities.chrome( :chrome_options => {detach: true})
 # driver= Selenium::WebDriver.for :chrome #desire_capabilities: caps
 caps = Selenium::WebDriver::Remote::Capabilities.chrome("goog:chromeOptions" => {detach: true})
