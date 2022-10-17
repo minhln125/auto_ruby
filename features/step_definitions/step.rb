@@ -1,7 +1,7 @@
 require 'selenium-cucumber'
 require 'appium_lib'
 dirname = Dir.pwd
-Selenium::WebDriver::Chrome.path = dirname+"/driver/chromedriver"
+Selenium::WebDriver::Chrome.path = "/var/jenkins_home/workspace/automation/driver/chromedriver"
 # caps = Selenium::WebDriver::Remote::Capabilities.chrome( :chrome_options => {detach: true})
 # driver= Selenium::WebDriver.for :chrome #desire_capabilities: caps
 caps = Selenium::WebDriver::Remote::Capabilities.chrome("goog:chromeOptions" => {detach: true})
