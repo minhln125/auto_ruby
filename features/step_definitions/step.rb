@@ -1,10 +1,7 @@
 require 'selenium-cucumber'
 require 'appium_lib'
 dirname = Dir.pwd
-# options = Selenium::WebDriver::Chrome::Options.new
-# options.add_argument('--headless')
-# options.add_argument('--disable-gpu')
-Selenium::WebDriver::Chrome.path = dirname+"/driver/chromedriver.exe"
+Selenium::WebDriver::Chrome.path = '/var/jenkins_home/workspace/automation/driver/chromedriver'
 caps = Selenium::WebDriver::Remote::Capabilities.chrome("goog:chromeOptions" => {detach: true})
 driver = Selenium::WebDriver.for :chrome ,capabilities: caps
 Given('on page login') do
