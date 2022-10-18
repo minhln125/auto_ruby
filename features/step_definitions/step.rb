@@ -3,11 +3,10 @@ require 'appium_lib'
 dirname = Dir.pwd
 # options = Selenium::WebDriver::Chrome::Options.new
 # options.add_argument('--headless')
-Selenium::WebDriver::Chrome.path = dirname+"/driver/chromedriver"
-# caps = Selenium::WebDriver::Remote::Capabilities.chrome( :chrome_options => {detach: true})
-# driver= Selenium::WebDriver.for :chrome #desire_capabilities: caps
+# options.add_argument('--disable-gpu')
+Selenium::WebDriver::Chrome.path = dirname+"/driver/chromedriver.exe"
 caps = Selenium::WebDriver::Remote::Capabilities.chrome("goog:chromeOptions" => {detach: true})
-driver = Selenium::WebDriver.for :chrome, capabilities: caps
+driver = Selenium::WebDriver.for :chrome ,capabilities: caps
 Given('on page login') do
   driver.get 'https://skhcn.erp.meu-solutions.com/'
   driver.manage.timeouts.implicit_wait=10
