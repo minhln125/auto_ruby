@@ -1,7 +1,7 @@
 require 'selenium-cucumber'
 require 'appium_lib'
 dirname = Dir.pwd
-Selenium::WebDriver::Chrome.path = "/driver/chromedriver"
+Selenium::WebDriver::Chrome.path = dirname+"/driver/chromedriver"
 caps = Selenium::WebDriver::Remote::Capabilities.chrome("goog:chromeOptions" => {detach: true})
 driver = Selenium::WebDriver.for :chrome ,capabilities: caps
 Given('on page login') do
