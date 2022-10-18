@@ -98,6 +98,6 @@ DEPENDENCIES
   report_builder
   selenium-cucumber
   watir
-  webdriver
+  webdrivers
 BUNDLED WITH
    2.3.23
