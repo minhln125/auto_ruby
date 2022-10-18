@@ -1,6 +1,8 @@
 require 'selenium-cucumber'
 require 'appium_lib'
 dirname = Dir.pwd
+# options = Selenium::WebDriver::Chrome::Options.new
+# options.add_argument('--headless')
 Selenium::WebDriver::Chrome.path = dirname+"/driver/chromedriver"
 # caps = Selenium::WebDriver::Remote::Capabilities.chrome( :chrome_options => {detach: true})
 # driver= Selenium::WebDriver.for :chrome #desire_capabilities: caps
