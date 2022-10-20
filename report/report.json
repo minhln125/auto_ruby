@@ -1,66 +1,67 @@
 [
   {
-    "id": "test-login",
+    "id": "test-1",
     "uri": "features/login.feature",
     "keyword": "Feature",
-    "name": "Test login",
+    "name": "test-1",
     "description": "",
     "line": 1,
     "elements": [
       {
-        "id": "test-login;test-login-function-with-valid-credential",
+        "id": "test-1;test-login-function-with-valid-credential",
         "keyword": "Scenario",
         "name": "test login function with valid credential",
         "description": "",
-        "line": 3,
+        "line": 10,
         "type": "scenario",
         "steps": [
           {
             "keyword": "Given ",
             "name": "on page login",
-            "line": 4,
+            "line": 11,
             "match": {
               "location": "features/step_definitions/step.rb:11"
             },
             "result": {
               "status": "passed",
-              "duration": 4714580300
+              "duration": 2263911700
             }
           },
           {
             "keyword": "When ",
             "name": "Enter \"minhtrieu@meu-solutions.com\" name and \"minhln1234\"",
-            "line": 5,
+            "line": 12,
             "match": {
               "location": "features/step_definitions/step.rb:16"
             },
             "result": {
               "status": "passed",
-              "duration": 3141782400
+              "duration": 3239661100
             }
           },
           {
             "keyword": "And ",
             "name": "press login page",
-            "line": 6,
+            "line": 13,
             "match": {
               "location": "features/step_definitions/step.rb:21"
             },
             "result": {
               "status": "passed",
-              "duration": 125919200
+              "duration": 76477000
             }
           },
           {
             "keyword": "Then ",
             "name": "Navigate to homepage",
-            "line": 7,
+            "line": 14,
             "match": {
               "location": "features/step_definitions/step.rb:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 1574945100
+              "status": "failed",
+              "error_message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"kt_header_brand\"]/div[1]/a/img[1]\"}\n  (Session info: headless chrome=106.0.5249.119) (Selenium::WebDriver::Error::NoSuchElementError)\nBacktrace:\n\tOrdinal0 [0x00821ED3+2236115]\n\tOrdinal0 [0x007B92F1+1807089]\n\tOrdinal0 [0x006C66FD+812797]\n\tOrdinal0 [0x006F55DF+1005023]\n\tOrdinal0 [0x006F57CB+1005515]\n\tOrdinal0 [0x00727632+1209906]\n\tOrdinal0 [0x00711AD4+1120980]\n\tOrdinal0 [0x007259E2+1202658]\n\tOrdinal0 [0x007118A6+1120422]\n\tOrdinal0 [0x006EA73D+960317]\n\tOrdinal0 [0x006EB71F+964383]\n\tGetHandleVerifier [0x00ACE7E2+2743074]\n\tGetHandleVerifier [0x00AC08D4+2685972]\n\tGetHandleVerifier [0x008B2BAA+532202]\n\tGetHandleVerifier [0x008B1990+527568]\n\tOrdinal0 [0x007C080C+1837068]\n\tOrdinal0 [0x007C4CD8+1854680]\n\tOrdinal0 [0x007C4DC5+1854917]\n\tOrdinal0 [0x007CED64+1895780]\n\tBaseThreadInitThunk [0x7657FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x772A7BBE+286]\n\tRtlGetAppContainerNamedObjectPath [0x772A7B8E+238]\n./features/step_definitions/step.rb:26:in `\"Navigate to homepage\"'\nfeatures/login.feature:14:in `Navigate to homepage'",
+              "duration": 10047257500
             }
           }
         ]

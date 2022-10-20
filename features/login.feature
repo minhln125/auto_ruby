@@ -1,5 +1,5 @@
 @CA-3
-Feature: test-ex
+Feature: test-excution
 
 	#given a
 	#when b
