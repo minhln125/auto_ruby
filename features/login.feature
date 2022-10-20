@@ -1,3 +1,11 @@
+@CA-3
+Feature: test-ex
+
+	#given a
+	#when b
+	#then c
+  @TEST_CA-2 @BDD_Feature
+  Scenario: test-1
 Feature: Test login
 
   Scenario: test login function with valid credential

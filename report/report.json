@@ -1,0 +1,70 @@
+[
+  {
+    "id": "test-login",
+    "uri": "features/login.feature",
+    "keyword": "Feature",
+    "name": "Test login",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "test-login;test-login-function-with-valid-credential",
+        "keyword": "Scenario",
+        "name": "test login function with valid credential",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "on page login",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/step.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4714580300
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "Enter \"minhtrieu@meu-solutions.com\" name and \"minhln1234\"",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/step.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3141782400
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "press login page",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/step.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125919200
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "Navigate to homepage",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/step.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1574945100
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
