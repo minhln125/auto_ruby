@@ -1,11 +1,10 @@
 @CA-3
 Feature: test-excution
+  excution test
 
-	#given a
-	#when b
-	#then c
   @TEST_CA-2 @BDD_Feature
-  Scenario: test-1
+  Scenario Outline: test-1
+    Examples:
 Feature: Test login
 
   Scenario: test login function with valid credential

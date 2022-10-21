@@ -1,70 +1,104 @@
 [
   {
-    "id": "test-1",
-    "uri": "features/login.feature",
-    "keyword": "Feature",
-    "name": "test-1",
     "description": "",
-    "line": 1,
     "elements": [
       {
-        "id": "test-1;test-login-function-with-valid-credential",
+        "description": "Feature: Test login",
+        "id": "test-excution;test-1",
         "keyword": "Scenario",
-        "name": "test login function with valid credential",
-        "description": "",
-        "line": 10,
+        "line": 8,
+        "name": "test-1",
+        "steps": [],
         "type": "scenario",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@CA-3"
+          },
+          {
+            "line": 7,
+            "name": "@TEST_CA-2"
+          },
+          {
+            "line": 7,
+            "name": "@BDD_Feature"
+          }
+        ]
+      },
+      {
+        "description": "",
+        "id": "test-excution;test-login-function-with-valid-credential",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "test login function with valid credential",
         "steps": [
           {
             "keyword": "Given ",
+            "line": 12,
             "name": "on page login",
-            "line": 11,
+            "result": {
+              "duration": 2467849100,
+              "status": "passed"
+            },
             "match": {
               "location": "features/step_definitions/step.rb:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2263911700
             }
           },
           {
             "keyword": "When ",
+            "line": 13,
             "name": "Enter \"minhtrieu@meu-solutions.com\" name and \"minhln1234\"",
-            "line": 12,
+            "result": {
+              "duration": 3906142800,
+              "status": "passed"
+            },
             "match": {
               "location": "features/step_definitions/step.rb:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3239661100
             }
           },
           {
             "keyword": "And ",
+            "line": 14,
             "name": "press login page",
-            "line": 13,
+            "result": {
+              "duration": 64133399,
+              "status": "passed"
+            },
             "match": {
               "location": "features/step_definitions/step.rb:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 76477000
             }
           },
           {
             "keyword": "Then ",
+            "line": 15,
             "name": "Navigate to homepage",
-            "line": 14,
+            "result": {
+              "duration": 1581183400,
+              "status": "passed"
+            },
             "match": {
               "location": "features/step_definitions/step.rb:25"
-            },
-            "result": {
-              "status": "failed",
-              "error_message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"kt_header_brand\"]/div[1]/a/img[1]\"}\n  (Session info: headless chrome=106.0.5249.119) (Selenium::WebDriver::Error::NoSuchElementError)\nBacktrace:\n\tOrdinal0 [0x00821ED3+2236115]\n\tOrdinal0 [0x007B92F1+1807089]\n\tOrdinal0 [0x006C66FD+812797]\n\tOrdinal0 [0x006F55DF+1005023]\n\tOrdinal0 [0x006F57CB+1005515]\n\tOrdinal0 [0x00727632+1209906]\n\tOrdinal0 [0x00711AD4+1120980]\n\tOrdinal0 [0x007259E2+1202658]\n\tOrdinal0 [0x007118A6+1120422]\n\tOrdinal0 [0x006EA73D+960317]\n\tOrdinal0 [0x006EB71F+964383]\n\tGetHandleVerifier [0x00ACE7E2+2743074]\n\tGetHandleVerifier [0x00AC08D4+2685972]\n\tGetHandleVerifier [0x008B2BAA+532202]\n\tGetHandleVerifier [0x008B1990+527568]\n\tOrdinal0 [0x007C080C+1837068]\n\tOrdinal0 [0x007C4CD8+1854680]\n\tOrdinal0 [0x007C4DC5+1854917]\n\tOrdinal0 [0x007CED64+1895780]\n\tBaseThreadInitThunk [0x7657FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x772A7BBE+286]\n\tRtlGetAppContainerNamedObjectPath [0x772A7B8E+238]\n./features/step_definitions/step.rb:26:in `\"Navigate to homepage\"'\nfeatures/login.feature:14:in `Navigate to homepage'",
-              "duration": 10047257500
             }
           }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@CA-3"
+          }
         ]
+      }
+    ],
+    "id": "test-excution",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "test-excution",
+    "uri": "features/login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CA-3"
       }
     ]
   }
