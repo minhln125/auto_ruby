@@ -1,10 +1,8 @@
 @CA-3
 Feature: test-excution
   excution test
-
   @TEST_CA-2 @BDD_Feature
-  Scenario Outline: test-1
-    Examples:
+  Scenario: test-1
 Feature: Test login
 
   Scenario: test login function with valid credential
