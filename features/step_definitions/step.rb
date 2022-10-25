@@ -1,12 +1,15 @@
 require 'selenium-cucumber'
 require 'appium_lib'
-options = Selenium::WebDriver::Chrome::Options.new
-options.add_argument('--no-sandbox')
-options.add_argument('--headless')
-options.add_argument('--disable-gpu')
-options.add_argument('--disable-dev-shm-usage')
-caps = Selenium::WebDriver::Remote::Capabilities.chrome("goog:chromeOptions" => {detach: true})
-driver = Selenium::WebDriver.for :chrome ,capabilities: caps, options: options
+options = Selenium::WebDriver::Options.firefox
+options.browser_version = 'latest'
+options.platform_name = 'Windows 10'
+sauce_options = {}
+sauce_options[:build] = '<your build id>'
+sauce_options[:name] = '<your test name>'
+options.add_option('sauce:options', sauce_options)
+
+url = 'https://oauth-minhln125-44ef9:26839fe5-aa95-4ac3-8904-b6b72f550922@ondemand.apac-southeast-1.saucelabs.com:443/wd/hub'
+driver = Selenium::WebDriver.for(:remote, :url => url, :capabilities => options)
 Given('on page login') do
   driver.get 'https://skhcn.erp.meu-solutions.com/'
   driver.manage.timeouts.implicit_wait=10
