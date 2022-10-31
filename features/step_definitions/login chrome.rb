@@ -1,15 +1,17 @@
 require 'selenium-cucumber'
 require 'appium_lib'
-options = Selenium::WebDriver::Options.firefox
-options.browser_version = 'latest'
-options.platform_name = 'Windows 10'
-sauce_options = {}
-sauce_options[:build] = '<N01>'
-sauce_options[:name] = '<Testsaucelab>'
-options.add_option('sauce:options', sauce_options)
+caps = Selenium::WebDriver::Remote::Capabilities.new
+caps[:platform_name] = 'Android'
+caps[:browser_name] = 'Chrome'
+caps['appium:deviceName'] = 'Samsung Galaxy S9'
+caps['appium:platformVersion'] = '10'
+caps['appium:automationName'] = 'UiAutomator2'
+caps['sauce:options'] = {}
+caps['sauce:options'][:build] = '<your build id>'
+caps['sauce:options'][:name] = '<your test name>'
 
-url = 'https://oauth-minhln125-44ef9:26839fe5-aa95-4ac3-8904-b6b72f550922@ondemand.apac-southeast-1.saucelabs.com:443/wd/hub'
-driver = Selenium::WebDriver.for(:remote, :url => url, :capabilities => options)
+url = 'https://oauth-minhln125-44ef9:26839fe5-aa95-4ac3-8904-b6b72f550922@ondemand.us-west-1.saucelabs.com:443/wd/hub'
+driver = Selenium::WebDriver.for(:remote, :url => url, :capabilities => caps)
 Given('on page login') do
   driver.get 'https://skhcn.erp.meu-solutions.com/'
   driver.manage.timeouts.implicit_wait=10
