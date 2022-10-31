@@ -7,8 +7,8 @@ caps['appium:deviceName'] = 'Samsung Galaxy S9'
 caps['appium:platformVersion'] = '10'
 caps['appium:automationName'] = 'UiAutomator2'
 caps['sauce:options'] = {}
-caps['sauce:options'][:build] = '<your build id>'
-caps['sauce:options'][:name] = '<your test name>'
+caps['sauce:options'][:build] = 'N01'
+caps['sauce:options'][:name] = 'build app 1'
 
 url = 'https://oauth-minhln125-44ef9:26839fe5-aa95-4ac3-8904-b6b72f550922@ondemand.us-west-1.saucelabs.com:443/wd/hub'
 driver = Selenium::WebDriver.for(:remote, :url => url, :capabilities => caps)
